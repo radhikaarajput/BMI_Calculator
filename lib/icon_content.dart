@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-const labelStyling=TextStyle(fontSize: 18.0, color: Color(0xFF8D8E98));
+const labelStyling = TextStyle(fontSize: 18.0, color: Color(0xFF8D8E98));
 
-class IconContent extends StatelessWidget
-{
+class IconContent extends StatelessWidget {
   final IconData icon;
   final String label;
 
@@ -12,17 +11,17 @@ class IconContent extends StatelessWidget
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,   //for center
+      mainAxisAlignment: MainAxisAlignment.center, //for center
       children: [
         Icon(
           icon,
           size: 80.0,
         ),
-        SizedBox(  //dist b/w icon, female text
+        SizedBox(
+          //dist b/w icon, female text
           height: 15.0,
         ),
-        Text(label,
-          style: labelStyling ),
+        Text(label, style: labelStyling),
       ],
     );
   }
